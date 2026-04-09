@@ -115,22 +115,21 @@
 }
 
 @media screen and (min-width: 768px){
-.img-detalle:active{
-    transform: scale(2);
-}
+    .img-detalle:active{
+        transform: scale(2);
+    }
 
-.div-img:has(.img-detalle:active) {
-    translate: 70px 0px;
-    z-index: 999;
-}
+    .div-img:has(.img-detalle:active) {
+        translate: 70px 0px;
+        z-index: 1500;
+    }
 
-.div-img:hover {
-    transform:unset;
-}
+    .div-img:hover {
+        transform:unset;
+    }
 
-.div-img:hover .img-indicacion {
-    visibility: visible;
-}
-
+    .div-img:hover .img-indicacion {
+        visibility: visible;
+    }
 
 }
