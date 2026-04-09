@@ -84,7 +84,7 @@
 }
 
 .img-detalle:active{
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 .div-img:has(.img-detalle:active) {
