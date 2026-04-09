@@ -23,7 +23,7 @@
     border-radius: 1vw;
 }
 
-.btn-primario:hover{
+.btn-secundario:hover{
     background-color: var(--color-secundario);
     color: var(--color-superficie);
     box-shadow: 0vw 0vh 3px 2px var(--color-primario);
