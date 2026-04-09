@@ -1,0 +1,135 @@
+@import url("./style.css");
+
+.titulo-descripcion-flex {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+.detalle-pelicula-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--space-m);
+    justify-content: space-around;
+    border-radius: 8px;
+    height: 40%;
+}
+
+.texto-titulo-descripcion {
+    width: 80%;
+    padding-left: var(--space-s);
+}
+
+.seccion-detalle {
+    padding: var(--space-l) var(--space-xl);
+    margin-top: var(--space-m);
+}
+
+.texto-primario {
+    color: var(--color-primario);
+}
+
+.texto-secundario {
+    color: var(--color-secundario);
+}
+
+.texto-claro {
+    color: var(--color-texto);
+}
+
+.texto-suave {
+    color: var(--color-texto-suave);
+}
+
+.flex-puntuacion-compra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--space-xxl);
+    padding: 0px var(--space-xl) ;
+}
+
+.puntuacion {
+    font-size: 20px;
+    color: var(--color-texto);
+}
+
+.estrellas {
+    color: var(--color-secundario);
+    text-shadow: 1px 1px var(--color-primario);
+}
+
+.img-size-m {
+    width: 15em;
+    height: auto;
+}
+
+.img-poster-border {
+    box-shadow: 0px 0px 3px 5px var(--color-superficie);
+    border-radius: 4px;
+}
+
+.img-detalle {
+    margin-top: 5px;
+}
+
+.div-img {
+    transform: perspective(70vh) rotateY(18deg);
+    z-index: 9;
+}
+
+
+.img-indicacion {
+    visibility: hidden;
+    font-size: 9px;
+}
+
+
+/*  CSS PARA DISPOSITIVOS MOVILES */
+@media screen and (max-width: 767px) {
+    .titulo-descripcion-flex {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .detalle-pelicula-flex {
+        flex-direction: column;
+    }
+
+    .flex-puntuacion-compra {
+        flex-direction: column;
+    }
+
+    .img-size-m {
+        width: 70vw;
+    }
+
+    .div-img {
+        transform: perspective(20vh) rotateX(10deg);
+    }
+
+    .div-img:focus {
+        transform: perspective(0vh) rotateX(0deg) scale(1.3);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .img-detalle:active{
+        transform: scale(2);
+    }
+
+    .div-img:has(.img-detalle:active) {
+        translate: 70px 0px;
+        z-index: 1500;
+    }
+
+    .div-img:hover {
+        transform:unset;
+    }
+
+    .div-img:hover .img-indicacion {
+        visibility: visible;
+    }
+
+}
