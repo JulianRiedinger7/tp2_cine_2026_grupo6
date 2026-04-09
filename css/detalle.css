@@ -1,12 +1,9 @@
 @import url("./style.css");
-@import url("./components/poster.css");    
-@import url("./components/card-horizontal.css");
-@import url("./components/button.css");
 
 .titulo-descripcion-flex {
     display: flex;
     flex-direction: row;
-    height: 60vh;
+    height: 70%;
 }
 
 .detalle-pelicula-flex {
@@ -15,10 +12,11 @@
     margin-top: 16px;
     justify-content: space-around;
     border-radius: 8px;
+    height: 40%;
 }
 
 .texto-titulo-descripcion {
-    width: 80vw;
+    width: 80%;
     padding-left: 8px;
 }
 
@@ -49,7 +47,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 5vh;
-    padding 0px 3vw 0;
+    padding: 0vh 3vw;
 }
 
 .puntuacion {
@@ -63,7 +61,7 @@
 }
 
 .img-size-m {
-    width: 15vw;
+    width: 15em;
     height: auto;
 }
 
@@ -95,9 +93,35 @@
 
 .img-indicacion {
     visibility: hidden;
+    font-size: 9px;
 }
 
 .div-img:hover .img-indicacion {
     visibility: visible;
-    font-size: 9px;
+}
+
+
+/*  CSS PARA DISPOSITIVOS MOVILES */
+@media screen and (max-width: 767px) {
+    .titulo-descripcion-flex {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .detalle-pelicula-flex {
+        flex-direction: column;
+    }
+
+    .flex-puntuacion-compra {
+        flex-direction: column;
+    }
+
+    .img-size-m {
+        width: 70vw;
+    }
+
+    .div-img {
+        transform: perspective(20vh) rotateX(10deg);
+
+    }
 }
