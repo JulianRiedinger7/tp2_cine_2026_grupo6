@@ -1,6 +1,53 @@
 /* las fotos de las películas están más pequeñas por un tema de visibilidad
 modifiquen los atributos a su gusto con una clase, o eliminen esta parte del código */
 img {
-  width: 100px;
-  height: 100px;
+  max-width: 100%;
+  height: auto;
 }
+.contenedor-poster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.poster{
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.poster img {
+  width: 100%;
+  height: 300px;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/*hover efectos*/
+.poster:hover img {
+  transform: scale(1.1);
+}
+.poster:hover .overlay {
+  opacity: 1;
+}
+
