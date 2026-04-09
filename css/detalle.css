@@ -1,0 +1,103 @@
+@import url("./style.css");
+@import url("./components/poster.css");    
+@import url("./components/card-horizontal.css");
+@import url("./components/button.css");
+
+.titulo-descripcion-flex {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+}
+
+.detalle-pelicula-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+.texto-titulo-descripcion {
+    width: 80vw;
+    padding-left: 8px;
+}
+
+.seccion-detalle {
+    padding: 5vh 5vw;
+    margin-top: 5vh;
+}
+
+.texto-primario {
+    color: var(--color-primario);
+}
+
+.texto-secundario {
+    color: var(--color-secundario);
+}
+
+.texto-claro {
+    color: var(--color-texto);
+}
+
+.texto-suave {
+    color: var(--color-texto-suave);
+}
+
+.flex-puntuacion-compra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    padding 0px 3vw 0;
+}
+
+.puntuacion {
+    font-size: 20px;
+    color: var(--color-texto);
+}
+
+.estrellas {
+    color: var(--color-secundario);
+    text-shadow: 1px 1px var(--color-primario);
+}
+
+.img-size-m {
+    width: 15vw;
+    height: auto;
+}
+
+.img-poster-border {
+    box-shadow: 0px 0px 3px 5px var(--color-superficie);
+    border-radius: 4px;
+}
+
+.img-detalle {
+    margin-top: 5px;
+}
+
+.div-img {
+    transform: perspective(70vh) rotateY(18deg);
+    z-index: 9;
+}
+
+.div-img:hover {
+    transform:unset;
+}
+
+.img-detalle:active{
+    transform: scale(1.5);
+}
+
+.div-img:has(.img-detalle:active) {
+    z-index: 999;
+}
+
+.img-indicacion {
+    visibility: hidden;
+}
+
+.div-img:hover .img-indicacion {
+    visibility: visible;
+    font-size: 9px;
+}
