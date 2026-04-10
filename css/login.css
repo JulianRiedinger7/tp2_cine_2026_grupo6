@@ -1,0 +1,18 @@
+@import url("../css/style.css");
+@import url("../css/components/input.css");
+
+/* CSS la página de login */
+legend{
+    background-color: var(--color-superficie);
+    color: white;
+    padding: var(--space-s) var(--space-s);
+    text-align: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

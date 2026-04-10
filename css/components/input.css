@@ -1,0 +1,34 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+    margin-bottom: var(--space-l);
+}
+
+.form-group input {
+    background-color: var(--color-superficie);
+    color: var(--colortextosuave);
+}
+
+.form-group input:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: var(--space-l);
+        margin: 20px;
+    }
+}
+
+
+
