@@ -1,3 +1,6 @@
+@import url("../css/style.css");
+@import url("../css/components/input.css");
+
 /* CSS la página de login */
 legend{
     background-color: var(--color-superficie);
