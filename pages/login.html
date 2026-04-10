@@ -23,19 +23,21 @@
         </nav>
       </div>
     </header>
-    <main>
-      <form action="perfil.html">
-        <h2>Acceso Clientes</h2>
-        <div>
-          <label>Email</label>
-          <input type="email" required />
-        </div>
-        <div>
-          <label>Contraseña</label>
-          <input type="password" required />
-        </div>
-        <button type="submit">Ingresar</button>
-        <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p>
+    <main >
+      <form class="form-container" action="perfil.html">
+        <fieldset>
+          <legend>Bienvenido a Cine Aurora</legend>
+          <h2>Acceso Clientes</h2>
+          <div class="form-group">
+            <label>Email</label>
+            <input class="input-field" type="email" required />
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input class="input-field" type="password" required />
+          </div>
+          <button class="btn-ok" type="submit">Ingresar</button>
+        <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p></fieldset>
       </form>
     </main>
 

@@ -33,11 +33,12 @@
     background-color: var(--color-terciario);
     color: var(--color-texto);
     font-weight: bold;
-    padding: var(--space-m) var(--space-xs);
+    padding: var(--space-m) var(--space-m);
     border-radius: 1vw;
     border: none;
     cursor: pointer;
     transition: 0.3s;
+
 }
 
 .btn-ok:hover {
