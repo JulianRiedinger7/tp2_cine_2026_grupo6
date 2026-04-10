@@ -65,3 +65,30 @@
 .btn-primario {
     padding: var(--space-s) var(--space-m);
 }
+
+@media screen and (max-width: 600px) {
+    .container-cartelera {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pelicula-2"
+            "pelicula-1"
+            "pelicula-3"
+            "pelicula-4"
+            "pelicula-5"
+            "pelicula-6";
+    }
+
+    .poster img {
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .container-cartelera {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "pelicula-1 pelicula-2"
+            "pelicula-3 pelicula-4"
+            "pelicula-5 pelicula-6";
+    }
+}
