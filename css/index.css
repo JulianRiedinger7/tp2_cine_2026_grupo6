@@ -2,93 +2,67 @@
 @import url("./components/poster.css");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .titulo-cartelera {
-    text-align: center;
-    font-size: 36px;
-    margin-top: var(--space-xl);
-    margin-bottom: var(--space-xl);
+  text-align: center;
+  font-size: 36px;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
 }
 
 .titulo-pelicula {
-    font-size: 28px;
+  font-size: 28px;
 }
 
-.poster p {
-    font-size: 18px;
-    color: var(--color-secundario);
+.container-cartelera p {
+  font-size: 18px;
+  color: var(--color-secundario);
 }
 
 .container-cartelera {
-    margin: var(--space-l);
+  margin: var(--space-l);
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    gap: var(--space-l);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: var(--space-l);
 
-    grid-template-areas:
-        "pelicula-1 pelicula-2 pelicula-2 pelicula-3"
-        "pelicula-4 pelicula-4 pelicula-5 pelicula-6";
+  grid-template-areas:
+    "pelicula-1 pelicula-2 pelicula-2 pelicula-3"
+    "pelicula-4 pelicula-4 pelicula-5 pelicula-6";
 }
 
-.poster {
-    background-color: var(--color-superficie);
-    padding: var(--space-m);
-    padding-bottom: var(--space-xl);
-    border-radius: 8px;
-    text-align: center;
-    color: var(--color-texto);
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-m);
-}
-
-.poster img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 4px;
-    margin-bottom: var(--space-m);
-}
-
-.btn-primario {
-    padding: var(--space-s) var(--space-m);
+.container-cartelera a {
+  padding: var(--space-s) var(--space-m);
 }
 
 @media screen and (max-width: 600px) {
-    .container-cartelera {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "pelicula-2"
-            "pelicula-1"
-            "pelicula-3"
-            "pelicula-4"
-            "pelicula-5"
-            "pelicula-6";
-    }
+  .container-cartelera {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pelicula-2"
+      "pelicula-1"
+      "pelicula-3"
+      "pelicula-4"
+      "pelicula-5"
+      "pelicula-6";
+  }
 
-    .poster img {
-        max-height: 300px;
-    }
+  .poster-grid img {
+    max-height: 300px;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-    .container-cartelera {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "pelicula-1 pelicula-2"
-            "pelicula-3 pelicula-4"
-            "pelicula-5 pelicula-6";
-    }
+  .container-cartelera {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "pelicula-1 pelicula-2"
+      "pelicula-3 pelicula-4"
+      "pelicula-5 pelicula-6";
+  }
 }
