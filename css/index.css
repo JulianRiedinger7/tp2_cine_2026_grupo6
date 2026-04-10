@@ -19,9 +19,12 @@
 
 .poster p {
     font-size: 18px;
+    color: var(--color-secundario);
 }
 
 .container-cartelera {
+    margin: var(--space-l);
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -30,7 +33,7 @@
 
     grid-template-areas:
         "pelicula-1 pelicula-2 pelicula-2 pelicula-3"
-        "pelicula-4 pelicula-5 pelicula-5 pelicula-6";
+        "pelicula-4 pelicula-4 pelicula-5 pelicula-6";
 }
 
 .poster {
@@ -51,7 +54,8 @@
 
 .poster img {
     width: 100%;
-    aspect-ratio: 2 / 3;
+    height: auto;
+    max-height: 400px;
     object-fit: contain;
     object-position: center;
     border-radius: 4px;
