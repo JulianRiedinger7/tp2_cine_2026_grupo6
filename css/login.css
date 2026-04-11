@@ -1,5 +1,5 @@
 @import url("../css/style.css");
-@import url("../css/components/input.css");
+
 
 /* CSS la página de login */
 legend{
@@ -16,3 +16,5 @@ fieldset {
     align-items: center;
     border-radius: 10px;
 }
+
+

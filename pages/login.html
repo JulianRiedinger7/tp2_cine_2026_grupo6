@@ -7,6 +7,7 @@
     <meta name="description" content="Cine Aurora - Login" />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -27,15 +28,22 @@
       <form class="form-container" action="perfil.html">
         <fieldset>
           <legend>Bienvenido a Cine Aurora</legend>
-          <h2>Acceso Clientes</h2>
           <div class="form-group">
-            <label>Email</label>
-            <input class="input-field" type="email" required />
+            <label for="email">Email</label>
+            <div class="input-container">
+              <i class="fa fa-envelope-o"></i>
+              <input class="input-field" type="email" id="email" placeholder="E-mail" />
+            </div>
           </div>
           <div class="form-group">
-            <label>Contraseña</label>
-            <input class="input-field" type="password" required />
+            <label for="password">Contraseña</label>
+            <div class="input-container">
+              <i class="fa fa-key" aria-hidden="true"></i>
+              <input id="password" class="input-field" type="password" required placeholder="Contraseña"/>
+            </div>
           </div>
+
+          
           <button class="btn-ok" type="submit">Ingresar</button>
         <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p></fieldset>
       </form>
