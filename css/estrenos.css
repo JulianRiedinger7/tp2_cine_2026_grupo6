@@ -1,0 +1,149 @@
+@import url("./style.css");
+@import url("./components/poster.css");
+header{
+    z-index: 100;
+}
+main {
+  padding-top: var(--space-l);
+}
+
+.seccion-estrenos {
+  padding: 40px 20px;
+  text-align: left;
+}
+.seccion-estrenos .poster{
+    transition: transform 0.3s ease;
+}
+.seccion-estrenos .contenedor-poster {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; 
+  
+}
+.seccion-estrenos .poster:hover {
+    transform: scale(1.03);
+}
+.seccion-estrenos .poster img {
+    transition: transform 0.3s ease;
+}
+.seccion-estrenos .poster:hover img {
+    transform: scale(1.05);
+}
+.seccion-estrenos .overlay {
+  position: static;
+}
+.seccion-estrenos .pelicula-item.poster{
+    display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: static;
+  width: 100%;
+  overflow: visible;
+  border-radius: 0;
+  cursor: default;
+}
+.seccion-estrenos .pelicula-item.poster img {
+  width: 100%;        
+  min-width: unset;
+  height: 320px;     
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+.seccion-estrenos .pelicula-item.poster .overlay{
+    display: none;
+}
+.poster{
+    position: static;
+    width: 100%;
+    overflow: visible;
+    
+}
+/* Título de la sección */
+.titulo-seccion {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: var(--color-primario);
+}
+
+/* Contenedor de los peliculas */
+.contenedor-poster {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+    
+}
+.horizontal {
+  display: flex;
+  flex-direction: column;
+}
+/* Estilos para cada película */
+
+
+.info {
+  max-width: 700px;
+  flex: 1;
+}
+.info h2 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: var(--color-secundario);
+}
+.info h4 {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: var(--color-primario);
+}
+.descripcion {
+  margin-bottom: 12px;
+  color: var(--color-texto-suave);
+  line-height: 1.6 ;
+}
+
+.info p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.poster-wrapper {
+  position: relative;
+  width: 220px;
+  min-width: 220px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--color-primario);
+  color: #fff;
+  padding: 3px 9px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+.seccion-estrenos .pelicula-item.poster:hover .poster-wrapper {
+  box-shadow: 0 0 0 2px var(--color-primario);
+}
+
+@media (max-width: 768px) {
+  .pelicula-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pelicula-item img {
+    width: 200px;
+  }
+  .info {
+    max-width: 100%;
+  }
+}
