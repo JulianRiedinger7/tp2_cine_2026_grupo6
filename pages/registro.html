@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -6,109 +7,104 @@
     <title>Cine Aurora 📽️ - Registro</title>
     <meta name="description" content="Cine Aurora - Registro" />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/registro.css" />
   </head>
 
   <body>
-    <header>
-      <div>
+    <header class="main-header"> 
+      <div class="header-logo">
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="./estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
-        </nav>
-      </div>
+      <nav class="header-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="estrenos.html">Próximos estrenos</a>
+        <a href="../index.html">Volver</a>
+      </nav>
     </header>
 
-    <main>
-      <div>
-        <form action="login.html">
-          <h2>Crear nueva cuenta</h2>
-          <div>
-            <label>Nombre Completo</label>
-            <input type="text" required />
-          </div>
-          <div>
-            <label>Email</label>
-            <input type="email" required />
-          </div>
-          <div>
-            <label>Fecha de nacimiento</label>
-            <input type="date" required />
-          </div>
-          <div>
-            <label>Contraseña</label>
-            <input type="password" required />
-          </div>
+    <main class="main-registro"> 
+      
+      <form action="login.html" class="card-vertical"> 
+        <h2>Crear nueva cuenta</h2>
+        
+        <div class="form-group">
+          <label>Nombre Completo</label>
+          <input type="text" required />
+        </div>
+        
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" required />
+        </div>
 
-          <div>
-            <label>Confirmar contraseña</label>
-            <input type="password" required />
+        <div class="form-group">
+          <label>Fecha de nacimiento</label>
+          <input type="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" required />
+        </div>
+
+        <div class="form-group">
+          <label>Confirmar contraseña</label>
+          <input type="password" required />
+        </div>
+
+        <hr />
+
+        <div class="seccion-extra">
+          <div class="extra-titulo">
+            <h3>Datos para ayudar al cine</h3>
+            <p>Estos datos nos ayudan a mejorar tu experiencia.</p>
           </div>
-
-          <hr />
-
-          <div>
-            <div>
-              <h3>Datos para ayudar al cine</h3>
-              <p>Estos datos nos ayudan a mejorar tu experiencia.</p>
+          
+          <div class="extra-campos">
+            <div class="form-group">
+              <label>Elegí tu color favorito para las butacas</label>
+              <input type="color" />
             </div>
-            <div>
-              <div>
-                <label>Elegí tu color favorito para las butacas</label>
-                <input type="color" />
-              </div>
 
-              <div>
-                <label
-                  >¿Cuántas entradas comprás en general? Min: 0 | Max: 10</label
-                >
-                <input type="range" min="0" max="10" />
-              </div>
+            <div class="form-group">
+              <label>¿Cuántas entradas comprás en general? Min: 0 | Max: 10</label>
+              <input type="range" min="0" max="10" />
+            </div>
 
-              <div>
-                <label>Seleccioná tu género favorito</label>
-                <select>
-                  <option>Acción</option>
-                  <option>Drama</option>
-                  <option>Ciencia ficción</option>
-                  <option>Terror</option>
-                  <option>Comedia</option>
-                  <option>Romance</option>
-                </select>
-              </div>
+            <div class="form-group">
+              <label>Seleccioná tu género favorito</label>
+              <select>
+                <option>Acción</option>
+                <option>Drama</option>
+                <option>Ciencia ficción</option>
+                <option>Terror</option>
+                <option>Comedia</option>
+                <option>Romance</option>
+              </select>
+            </div>
 
-              <div>
-                <label>Elegí tu snack favorito</label>
-
-                <input type="radio" name="snack" />
-                <label>Pochoclo dulce</label>
-
-                <input type="radio" name="snack" />
-                <label>Pochoclo salado</label>
-
-                <input type="radio" name="snack" />
-                <label>Chocolate</label>
-
-                <input type="radio" name="snack" />
-                <label>Frutos secos</label>
+            <div class="form-group snack-container">
+              <label>Elegí tu snack favorito</label>
+              <div class="radio-group">
+                <input type="radio" name="snack" id="s1"/><label for="s1">Pochoclo dulce</label>
+                <input type="radio" name="snack" id="s2"/><label for="s2">Pochoclo salado</label>
+                <input type="radio" name="snack" id="s3"/><label for="s3">Chocolate</label>
+                <input type="radio" name="snack" id="s4"/><label for="s4">Frutos secos</label>
               </div>
             </div>
           </div>
+        </div>
 
-          <div>
-            <button type="submit">Regístrate</button>
-          </div>
-        </form>
-      </div>
-
+        <div class="form-button">
+          <button type="submit" class="btn-principal">Regístrate</button>
+        </div>
+      </form>
+    </main>
+    
       <footer>
         <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
       </footer>
-    </main>
+
   </body>
 </html>
