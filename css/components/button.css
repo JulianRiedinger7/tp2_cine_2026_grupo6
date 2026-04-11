@@ -62,3 +62,13 @@
     box-shadow: 0vw 0vh 5px 1px var(--color-primario);
 }
 
+.btn-ver {
+  align-self: flex-start; /* Hace que el botón no ocupe todo el ancho */
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
