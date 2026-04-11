@@ -1,0 +1,24 @@
+@import url("./style.css");
+
+/* Usamos Flexbox en el MAIN para centrar la Card en la pantalla */
+main {
+  display: flex;
+  justify-content: center; /* Centra horizontal de izquierda a derecha */
+  align-items: center;     /* Centra vertical de arriba a abajo */
+  min-height: 100vh;       /* Ocupa toda la altura de la pantalla */
+  padding: 40px 20px;
+}
+
+/* El FORM se convierte en la Card Vertical */
+form {
+  display: flex;
+  flex-direction: column; /* Apila todo: título, inputs y botón */
+  
+  background-color: var(--color-superficie);
+  max-width: 450px;       /* Ancho típico de una card vertical */
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
