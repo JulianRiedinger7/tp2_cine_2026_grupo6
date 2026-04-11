@@ -12,7 +12,7 @@ img {
   max-width: 900px;
   margin: 0 auto;
 }
-.poster{
+.poster {
   position: relative;
   width: 200px;
   overflow: hidden;
@@ -27,7 +27,31 @@ img {
   display: block;
 }
 
-.overlay{
+.poster-grid {
+  background-color: var(--color-superficie);
+  padding: var(--space-m);
+  padding-bottom: var(--space-xl);
+  text-align: center;
+  color: var(--color-texto);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.poster-grid img {
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 4px;
+  margin-bottom: var(--space-m);
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,10 +68,9 @@ img {
 }
 
 /*hover efectos*/
-.poster:hover img {
+.poster img:hover {
   transform: scale(1.1);
 }
-.poster:hover .overlay {
+.poster .overlay:hover {
   opacity: 1;
 }
-

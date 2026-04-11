@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️</title>
-    <meta name="description" content="Cine Aurora - Tu destino para disfrutar del mejor cine en la ciudad. Descubre las últimas películas, compra tus entradas y vive la experiencia cinematográfica al máximo." />
+    <meta
+      name="description"
+      content="Cine Aurora - Tu destino para disfrutar del mejor cine en la ciudad. Descubre las últimas películas, compra tus entradas y vive la experiencia cinematográfica al máximo."
+    />
     <link rel="icon" href="./assets/favicon/logo-cine.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
@@ -25,99 +28,90 @@
     </header>
 
     <main>
-      <section>
-        <h2>Películas en cartelera</h2>
-
-        <div>
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+      <h2 class="titulo-cartelera">Películas en cartelera</h2>
+      <section class="container-cartelera">
+        <div class="poster poster-grid" style="grid-area: pelicula-1">
+          <img src="./assets/img/avengers-poster.webp" alt="Avengers" />
+          <h3 class="titulo-pelicula">Avengers Infinity War</h3>
+          <p>Accion</p>
+          <a href="./pages/detalle.html" class="btn-primario">Ver más</a>
+          <a
             href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
+            onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+            class="btn-secundario"
             >Comprar entradas</a
           >
-          </div>
+        </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+        <div class="poster poster-grid" style="grid-area: pelicula-2">
+          <img src="./assets/img/robocop-sample.png" alt="RoboCop" />
+          <h3 class="titulo-pelicula">RoboCop</h3>
+          <p>Accion</p>
+          <a href="./pages/detalle.html" class="btn-primario">Ver más</a>
+          <a
             href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
+            onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+            class="btn-secundario"
             >Comprar entradas</a
           >
-          </div>ref="pages/pelicula.html">Ver más</a>
+        </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+        <div class="poster poster-grid" style="grid-area: pelicula-3">
+          <img src="./assets/img/dune-poster.jpg" alt="Dune" />
+          <h3 class="titulo-pelicula">Dune</h3>
+          <p>Ciencia Ficción</p>
+          <a href="./pages/detalle.html" class="btn-primario">Ver más</a>
+          <a
             href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
+            onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+            class="btn-secundario"
             >Comprar entradas</a
           >
-          </div>
+        </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+        <div class="poster poster-grid" style="grid-area: pelicula-4">
+          <img src="./assets/img/guardianes-galaxia-poster.jpg" alt="Guardianes de la Galaxia" />
+          <h3 class="titulo-pelicula">Guardianes de la Galaxia</h3>
+          <p>Ciencia Ficción</p>
+          <a href="./pages/detalle.html" class="btn-primario">Ver más</a>
+          <a
             href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
+            onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+            class="btn-secundario"
             >Comprar entradas</a
           >
-          </div>
+        </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+        <div class="poster poster-grid" style="grid-area: pelicula-5">
+          <img src="./assets/img/flow-poster.webp" alt="Flow" />
+          <h3 class="titulo-pelicula">Flow</h3>
+          <p>Drama</p>
+          <a href="./pages/detalle.html" class="btn-primario">Ver más</a>
+          <a
             href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
+            onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+            class="btn-secundario"
             >Comprar entradas</a
           >
-          </div>
+        </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+        <div class="poster poster-grid" style="grid-area: pelicula-6">
+          <img src="./assets/img/maze-runner-poster.jpg" alt="Maze Runner" />
+          <h3 class="titulo-pelicula">Maze Runner</h3>
+          <p>Accion</p>
+          <a href="./pages/detalle.html" class="btn-primario">Ver más</a>
+          <a
             href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
+            onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+            class="btn-secundario"
             >Comprar entradas</a
           >
-          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p> &copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
