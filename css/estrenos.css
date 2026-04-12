@@ -1,5 +1,6 @@
 @import url("./style.css");
 @import url("./components/poster.css");
+@import url("./components/card-horizontal.css");
 header{
     z-index: 100;
 }
@@ -11,38 +12,28 @@ main {
   padding: 40px 20px;
   text-align: left;
 }
-.seccion-estrenos .poster{
+.poster{
     transition: transform 0.3s ease;
+    
+    position: static;
+    width: 100%;
+    overflow: visible;
 }
-.seccion-estrenos .contenedor-poster {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap; 
-  
-}
-.seccion-estrenos .poster:hover {
+
+.poster:hover {
     transform: scale(1.03);
 }
-.seccion-estrenos .poster img {
+.poster img {
     transition: transform 0.3s ease;
 }
-.seccion-estrenos .poster:hover img {
+.poster:hover img {
     transform: scale(1.05);
 }
-.seccion-estrenos .overlay {
+.overlay {
   position: static;
 }
-.seccion-estrenos .pelicula-item.poster{
-    display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  position: static;
-  width: 100%;
-  overflow: visible;
-  border-radius: 0;
-  cursor: default;
-}
-.seccion-estrenos .pelicula-item.poster img {
+
+.pelicula-item.poster img {
   width: 100%;        
   min-width: unset;
   height: 320px;     
@@ -50,15 +41,10 @@ main {
   border-radius: 0;
   display: block;
 }
-.seccion-estrenos .pelicula-item.poster .overlay{
+.pelicula-item.poster .overlay{
     display: none;
 }
-.poster{
-    position: static;
-    width: 100%;
-    overflow: visible;
-    
-}
+
 /* Título de la sección */
 .titulo-seccion {
   font-size: 2.5rem;
@@ -66,24 +52,12 @@ main {
   color: var(--color-primario);
 }
 
-/* Contenedor de los peliculas */
-.contenedor-poster {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 40px;
-    
-}
-.horizontal {
-  display: flex;
-  flex-direction: column;
-}
 /* Estilos para cada película */
-
 
 .info {
   max-width: 700px;
   flex: 1;
+  margin-left: 10px;
 }
 .info h2 {
   font-size: 1.6rem;
@@ -106,15 +80,6 @@ main {
   font-size: 0.95rem;
 }
 
-.poster-wrapper {
-  position: relative;
-  width: 220px;
-  min-width: 220px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-}
 .badge {
   position: absolute;
   top: 10px;
@@ -129,7 +94,7 @@ main {
   border-radius: 4px;
   backdrop-filter: blur(4px);
 }
-.seccion-estrenos .pelicula-item.poster:hover .poster-wrapper {
+.pelicula-item.poster:hover .poster-wrapper {
   box-shadow: 0 0 0 2px var(--color-primario);
 }
 
