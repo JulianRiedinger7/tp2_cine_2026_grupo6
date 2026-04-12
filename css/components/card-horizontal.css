@@ -1,0 +1,26 @@
+.contenedor-poster {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+    
+}
+.pelicula-item.poster{
+    display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: static;
+  width: 100%;
+  overflow: visible;
+  border-radius: 0;
+  cursor: default;
+}
+.poster-wrapper {
+  position: relative;
+  width: 220px;
+  min-width: 220px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
