@@ -1,0 +1,114 @@
+@import url("./style.css");
+@import url("./components/poster.css");
+@import url("./components/card-horizontal.css");
+header{
+    z-index: 100;
+}
+main {
+  padding-top: var(--space-l);
+}
+
+.seccion-estrenos {
+  padding: 40px 20px;
+  text-align: left;
+}
+.poster{
+    transition: transform 0.3s ease;
+    
+    position: static;
+    width: 100%;
+    overflow: visible;
+}
+
+.poster:hover {
+    transform: scale(1.03);
+}
+.poster img {
+    transition: transform 0.3s ease;
+}
+.poster:hover img {
+    transform: scale(1.05);
+}
+.overlay {
+  position: static;
+}
+
+.pelicula-item.poster img {
+  width: 100%;        
+  min-width: unset;
+  height: 320px;     
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+.pelicula-item.poster .overlay{
+    display: none;
+}
+
+/* Título de la sección */
+.titulo-seccion {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: var(--color-primario);
+}
+
+/* Estilos para cada película */
+
+.info {
+  max-width: 700px;
+  flex: 1;
+  margin-left: 10px;
+}
+.info h2 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: var(--color-secundario);
+}
+.info h4 {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: var(--color-primario);
+}
+.descripcion {
+  margin-bottom: 12px;
+  color: var(--color-texto-suave);
+  line-height: 1.6 ;
+}
+
+.info p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--color-primario);
+  color: #fff;
+  padding: 3px 9px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+.pelicula-item.poster:hover .poster-wrapper {
+  box-shadow: 0 0 0 2px var(--color-primario);
+}
+
+@media (max-width: 768px) {
+  .pelicula-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pelicula-item img {
+    width: 200px;
+  }
+  .info {
+    max-width: 100%;
+  }
+}

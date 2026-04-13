@@ -1,0 +1,74 @@
+.btn-primario {
+    background-color: var(--color-primario);
+    text-decoration: unset;
+    font-weight: bold;
+    color: var(--color-secundario);
+    padding: var(--space-m) var(--space-xs);
+    border-radius: 1vw;
+    box-shadow: 0vw 0vh 3px 2px var(--color-secundario);
+}
+
+.btn-primario:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    box-shadow: 0vw 0vh 3px 2px var(--color-primario);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    text-decoration: unset;
+    font-weight: bold;
+    color: var(--color-texto);
+    padding: var(--space-m) var(--space-xs);
+    border-radius: 1vw;
+}
+
+.btn-secundario:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-superficie);
+    box-shadow: 0vw 0vh 3px 2px var(--color-primario);
+}
+
+.btn-ok {
+    background-color: var(--color-terciario);
+    color: var(--color-texto);
+    font-weight: bold;
+    padding: var(--space-m) var(--space-m);
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.btn-ok:hover {
+    background-color: var(--color-cuaternario);
+    box-shadow: 0vw 0vh 5px 1px var(--color-terciario);
+}
+
+.btn-cancelar {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    font-weight: bold;
+    padding: var(--space-m) var(--space-xs);
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cancelar:hover {
+    background-color: var(--color-superficie);
+    box-shadow: 0vw 0vh 5px 1px var(--color-primario);
+}
+
+.btn-ver {
+  align-self: flex-start; /* Hace que el botón no ocupe todo el ancho */
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

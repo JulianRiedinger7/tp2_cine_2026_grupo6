@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️</title>
     <meta name="description" content="Cine Aurora - Detalle de la película." />
-    <link rel="icon" href="../assets/favicon/logo-cine.png" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/detalle.css">
   </head>
   <body>
     <header>
@@ -24,60 +23,59 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <img src="../assets/img/poster-1.png" alt="Póster" />
+      <section class="seccion-detalle">
+        <div class="titulo-descripcion-flex">            
+            <div class="div-img" tabindex="0">
+                <figure>                    
+                  <img class="img-size-m img-poster-border img-detalle" src="../assets/img/robocop-sample.png" alt="Póster"/>
+                  <figcaption class="img-indicacion">Manten para hacer zoom</figcaption>
+                </figure>
+            </div>
+            <div class="texto-titulo-descripcion">
+                <h1>Robocop</h1>
+                <h2 class="texto-secundario">Parte hombre. Máquina de piezas. Todo policía.</h2>
+                <h3 class="texto-claro">Sinopsis</h3>
+                <p class="texto-suave">
+                Alex Murphy patrulla una ciudad que ya decidió que es prescindible. OCP no lo resucita por misericordia; necesitan un producto. Lo que obtienen es algo más descabelado. Enterrada bajo las directivas conductuales, la memoria de Murphy sigue surgiendo en los peores momentos, convirtiendo la aplicación rutinaria en algo mucho más volátil. Cuanto más se acerca a los hombres que lo destruyeron, más se tensa su programación contra lo que realmente es. Oficialmente no puede querer venganza. Pero lo hace. Esa brecha entre lo que se permite que RoboCop sea y lo que Murphy no puede dejar de ser es donde vive la película.
+                </p>
+                <div class="detalle-pelicula-flex">
+                    <div>
+                        <h3>Duración</h3>
+                        <p class="texto-secundario">102 minutos</p>
+                    </div>
+                    <div>
+                        <h3>Género</h3>
+                        <p class="texto-secundario">Ciencia ficción</p>
+                    </div>
+                    <div>
+                        <h3>Director</h3>
+                        <p class="texto-secundario">Paul Verhoeven</p>
+                    </div>
+                    <div>
+                        <h3>Clasificación</h3>
+                        <p class="texto-secundario">+18</p>
+                    </div>
+                    <div>
+                        <h3>Horarios:</h3>
+                            <p class="texto-secundario">16:00</p>
+                            <p class="texto-secundario">19:00</p>
+                            <p class="texto-secundario">22:00</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-          <div>
-            <h1>Título</h1>
-            <h2>Lorem ipsum, dolor sit.</h2>
-          </div>
-          <div>
-            <h3>Sinopsis</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              ullam ipsum corporis quidem, assumenda magni officia recusandae.
-              Tenetur voluptatem architecto, dolores eius, deleniti quam
-              voluptatibus laboriosam ut recusandae animi quisquam!
-            </p>
-          </div>
-          <div>
-            <h3>Duración</h3>
-            <p>155 minutos</p>
-          </div>
-
-          <div>
-            <h3>Género</h3>
-            <p>Ciencia ficción</p>
-          </div>
-
-          <div>
-            <h3>Director</h3>
-            <p>John Doe</p>
-          </div>
-
-          <div>
-            <h3>Clasificación</h3>
-            <p>+13</p>
-          </div>
-          <div>
-            <h3>Horarios:</h3>
-            <p>16:00</p>
-            <p>19:00</p>
-            <p>22:00</p>
-          </div>
-          <div>
-            <p>Puntuación: ★★★★☆</p>
-          </div>
-          <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-        </div>
+        <div class="flex-puntuacion-compra">
+                <div>
+                    <p class="puntuacion">Puntuación: <span class="estrellas">★★★★☆</span></p>
+                </div>
+                <div>
+                    <a class="btn-primario"
+                      href="#"
+                      onclick="
+                        alert('Lo sentimos, en este momento no funciona nuestro sistema')
+                      "
+                    >Comprar entradas</a>
+               </div> 
       </section>
     </main>
 

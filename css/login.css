@@ -1,0 +1,22 @@
+@import url("../css/style.css");
+
+
+/* CSS la página de login */
+legend{
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: var(--space-s) var(--space-s);
+    text-align: center;
+    border-radius: 4px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--color-superficie);
+}
+
+

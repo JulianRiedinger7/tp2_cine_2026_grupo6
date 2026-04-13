@@ -1,33 +1,48 @@
-@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url("./components/button.css");
+@import url("./components/nav.css");
+@import url("./components/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap');
+@import url("./components/input.css");
 
-/* Paletas de colores que pueden usar: */
-
-/* Paleta 1: */
-/*:root {
+/* Paleta de colores */
+:root {
   --color-fondo: #0f172a;
   --color-superficie: #1e293b;
   --color-primario: #e11d48;
   --color-secundario: #f59e0b;
+  --color-terciario: #34c759;
+  --color-cuartenario: #28a745;
   --color-texto: #f8fafc;
   --color-texto-suave: #94a3b8;
-}*/
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+}
 
-/* Paleta 2: */
-/*:root {
-  --color-fondo: #fff8e7;
-  --color-superficie: #ffe8a3;
-  --color-primario: #e63946;
-  --color-secundario: #ffb703;
-  --color-texto: #1d3557;
-  --color-texto-suave: #457b9d;
-}*/
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-texto);
+}
 
-/* Paleta 3: */
-/*:root {
-  --color-fondo: #141414;
-  --color-superficie: #1f1f1f;
-  --color-primario: #e50914;
-  --color-secundario: #00b4d8;
-  --color-texto: #ffffff;
-  --color-texto-suave: #b3b3b3;
-}*/
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    color: var(--color-primario);
+}
+
+h2 {
+    color: var(--color-secundario);
+}
