@@ -2,6 +2,8 @@
 
 Bienvenid@ al repositorio del **Trabajo práctico Nª 2** para la asignatura de Programacion 3. En este proyecto el **Grupo 6** ha desarrollado un maquetado CSS aprovechando la Modularización, centrado en la visualizacion, las pseudo-clases para la aplicacion de algunos efectos a lo largo de la pagina.
 
+Github Pages: https://julianriedinger7.github.io/tp2_cine_2026_grupo6/
+
 ## 👥 Integrantes - Grupo 6
 * **Alejandro Lucas Baldres**
 * **Marianela Belardinelli**
