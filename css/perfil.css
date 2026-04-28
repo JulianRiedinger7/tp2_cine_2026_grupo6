@@ -1,0 +1,61 @@
+@import url("./components/header.css");
+
+.main-perfil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.main-perfil h1 {
+    grid-column: 1 / -1;
+    font-size: 1.25cm;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.foto-perfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.main-perfil #principal-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.5cm;
+}
+
+.main-perfil #peliculas-vistas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-size: 0.75cm;
+}
+
+.peliculas-vistas{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.perfil-vistos#li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.perfil-vistos li {
+    transition: transform 0.3s ease;
+}
+
+.perfil-vistos li:hover{
+    transform: scale(1.05);
+}
