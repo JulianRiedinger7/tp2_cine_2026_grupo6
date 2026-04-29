@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +8,14 @@
     <meta name="description" content="Cine Aurora - Mi perfil" />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/perfil.css" />
   </head>
 
   <body>
-    <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+    <header class="header-perfil">
+      <div class="header-logo-texto">
+        <h1> Cine Aurora</h1>
+        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora"/>
       </div>
       <div>
         <nav>
@@ -24,33 +26,34 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-perfil">
       <h1>Panel de usuario</h1>
-      <section>
+      <section id = "principal-perfil">
         <div>
           <img
-            src="../assets/img/perfil-placeholder.png"
+            src="../assets/img/fotoUsuario.webp"
             alt="Foto de perfil"
+            class = "foto-perfil"
           />
           <h2>Hola, John Doe 👋📽️!</h2>
         </div>
         <div>
           <p>Nombre completo: John Doe</p>
-          <p>Email: usuario@example.com</p>
-          <p>Fecha de nacimiento: dd/mm/yyyy</p>
+          <p>Email: JohnDoe@hotmail.com</p>
+          <p>Fecha de nacimiento: 25/03/1990</p>
           <p>Contraseña: ********</p>
           <p>Miembro desde: 2026</p>
         </div>
       </section>
-      <section>
+      <section id="peliculas-vistas">
         <div>
           <div>
             <h3>Películas ya vistas</h3>
           </div>
-          <div>
+          <div class="perfil-vistos">
             <ul>
-              <li>🎬 Estreno A - Vista el 10/03</li>
-              <li>🎬 Estreno B - Vista el 15/03</li>
+              <li id="li">🎬 Estreno A - Vista el 10/03</li>
+              <li id="li">🎬 Estreno B - Vista el 15/03</li>
             </ul>
           </div>
         </div>
